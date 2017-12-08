@@ -170,6 +170,13 @@ blockquote span{
 		margin-bottom: 20px;
 	}
 }
+
+@media(max-width: 479px){
+	blockquote{
+		font-size: 18px;
+		line-height: 1.6;
+	}
+}
 /* tabs */
 .nav-tabs{
 	border: none;
@@ -433,6 +440,17 @@ blockquote span{
 		height: auto;
 		padding: 150px 0;
 	}
+
+	.inner .inner-icon{
+		display: none;
+	}
+}
+
+@media(max-width: 599px){
+	.inner-content h1{
+		letter-spacing: .2em;
+		text-indent: .2em;
+	}
 }
 
 /* INNER END */
@@ -594,7 +612,7 @@ blockquote span{
 	}
 	.services-tab .tab-content{
 		margin-top: 35px;
-		overflow: hidden;  /* на 768пикс боковой скролл убрал */
+		overflow: hidden;  /* на 767пикс боковой скролл убрал */
 	}
 }
 
@@ -604,6 +622,22 @@ blockquote span{
 	}
 }
 
+@media(max-width: 599px){
+	.services-tab .nav-tabs > li a{
+		letter-spacing: .2em;
+		text-indent: .2em;
+	}
+
+	.services-tab .nav-tabs > li .icon{
+		margin-bottom: 15px;
+	}
+}
+
+@media(max-width: 479px){
+	.services-tab .nav-tabs > li{
+		width: 50%;
+	}
+}
 /* SERVICES END */
 
 
@@ -839,6 +873,12 @@ blockquote span{
 	}
 }
 
+@media(max-width: 479px){
+	.reviews .carousel p{
+		font-size: 14px;
+	}
+}
+
 /* REVIEWS END */
 
 /* LATEST NEWS START */
@@ -887,6 +927,15 @@ blockquote span{
 	}
 }
 
+@media(max-width: 599px){
+	.latest-news .title .link-title{
+		display: block;
+		float: none;
+		margin-top: 30px;
+		letter-spacing: .3em;
+	}
+}
+
 /* LATEST NEWS END */
 
 /* SUBSCRIBE START */
@@ -913,6 +962,11 @@ blockquote span{
 	}
 }
 
+@media(max-width: 599px){
+	.subscribe .subscribe-form .btn{
+		width: 100%;
+	}
+}
 /* SUBSCRIBE END */
 
 /* CONTACT US START */
@@ -974,6 +1028,7 @@ blockquote span{
 		margin-left: 10px;
 	}
 }
+
 @media(max-width: 767px){
 	.contact-us .contact-form .form-col{
 		width: 100%;
@@ -992,6 +1047,20 @@ blockquote span{
 
 	.contact-us .contact-form{
 		margin-top: 40px;
+	}
+}
+
+@media(max-width: 599px){
+	.contact-form .form-submit .require-info{
+		float: none !important;
+		line-height: 1;
+	}
+
+	.contact-form .form-submit .btn{
+		float: none !important;
+		display: block;
+		width: 100%;
+		margin-top: 20px;
 	}
 }
 /* CONTACT US END */
@@ -1081,7 +1150,7 @@ footer{
 	font-size: 50px;
 	color: #c6c6c6;
 	right: 30px;
-	bottom: 30px;
+	bottom: 25px;
 	z-index: 999;
 }
 /* CUSTOM STYLE END */
