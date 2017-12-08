@@ -124,12 +124,12 @@ textarea{
 	letter-spacing: .3em;
 }
 
-.title.small-section{
+.title.small-title{
 	letter-spacing: .4em;
 	margin-bottom: 25px;
 }
 
-.title.small-section > *{
+.title.small-title > *{
 	font-size: 14px;
 }
 
@@ -233,7 +233,6 @@ blockquote span{
 .btn.btn-small{
 	font-size: 11px;
 	padding: 8px 15px;
-	margin-top: 25px;
 }
 
 .btn.btn-mid{
@@ -369,6 +368,7 @@ blockquote span{
 .inner{
 	height: 100vh;
 	background: url("../img/inner-bg.jpg") no-repeat center/cover;
+	position: relative;
 }
 
 .inner::before{
@@ -395,6 +395,24 @@ blockquote span{
 .inner-content .description{
 	font-size: 19px;
 	opacity: .68;
+}
+
+.inner .inner-icon{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translateX(-50%) rotate(45deg);
+	font-size: 15px;
+	height: 20px;
+	width: 20px;
+	font-size: 10px;
+	color: rgba(0, 0, 0, .7);
+}
+
+.inner .inner-icon .fa{
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
 }
 
 @media(max-width: 1199px){
@@ -855,6 +873,10 @@ blockquote span{
 	margin-bottom: 25px;
 }
 
+.latest-news .news-item .btn{
+	margin-top: 25px;
+}
+
 @media(max-width: 991px){
 	/* .latest-news .news-item{
 		margin-bottom: 30px;
@@ -868,10 +890,6 @@ blockquote span{
 /* LATEST NEWS END */
 
 /* SUBSCRIBE START */
-.subscribe{
-	text-align: center;
-}
-
 .subscribe .title{
 	margin-bottom: 20px;
 	font-size: 16px;
@@ -1027,33 +1045,33 @@ footer{
 	padding-bottom: 55px;
 }
 
-.footer-content .social-nav{
+.page-footer .social-nav{
 	margin-top: 30px;
 	margin-bottom: 115px;
 }
 
-.footer-content .social-nav li{
+.page-footer .social-nav li{
 
 	text-align: center;
 	display: inline-block;
 }
 
-.footer-content .social-nav li + li{
+.page-footer .social-nav li + li{
 	margin-left: 25px;
 }
 
-.footer-content .social-nav li .rhomb-icon:hover{
+.page-footer .social-nav li .rhomb-icon:hover{
 	background-color: rgba(0, 0, 0, .95);
 	color: #f8f8f8;
 }
 
-.footer-content .copyright .year{
+.page-footer .copyright .year{
 	font-size: 12px;
 	letter-spacing: .5em;
 	margin-bottom: 15px;
 }
 
-.footer-content .copyright .slogan{
+.page-footer .copyright .slogan{
 	font-size: 11px;
 	color: rgba(0, 0, 0, .4)
 }
@@ -1067,9 +1085,3 @@ footer{
 	z-index: 999;
 }
 /* CUSTOM STYLE END */
-
-/* 1 контр точка зависит от ширины контейнера 1199px -> 992px * - ПК, Ноуты, плашеты в альбомной/ 
-/* 2 media 991px -> проверка 768px* - планшеты 10"/
-/* 3 media 767px -> проверка 600px* - планшеты 7", фаблеты/
-/* 4 media 599px -> проверка 480px* - телефоны 4" - 4,7" в альбомной /
-/* 5 media 479px -> проверка 320px - телефоны в портретной, альбомной */
